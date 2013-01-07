@@ -49,6 +49,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/wd4430 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -92,6 +93,9 @@
     <ClCompile Include="Vector.cc" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\gaps\pkgs\R2Shapes\R2Shapes.vcxproj">
+      <Project>{01a98ee8-c1e4-402b-a35b-ef0410ef0ce4}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\gaps\pkgs\R3Graphics\R3Graphics.vcxproj">
       <Project>{ac4e41f3-c0e6-446a-9e8e-63acb864d866}</Project>
     </ProjectReference>
